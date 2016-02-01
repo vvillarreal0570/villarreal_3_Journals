@@ -1,0 +1,8 @@
+1/28/16
+
+What is this?: 
+public void render(GameContainer gc, StateBasedGame sbg, Graphics g) 
+throws SlickException {
+Is it a class of method? How  do you know?
+
+This pice of code is a class because it indicates an action that affects itself.

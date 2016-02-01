@@ -1,0 +1,12 @@
+1/29/16
+
+What is a class constructor?
+A class constructor defines how code is made.
+
+What should be included in a class constructor for orbs? Why?
+A class constructor for orbs should include a private integer.
+
+
+What methods should the orb have? why?
+The orb should have a private initative so each orb has a different function.
+
