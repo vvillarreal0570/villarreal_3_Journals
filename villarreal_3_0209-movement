@@ -1,0 +1,11 @@
+Feb. 09 2016
+
+How can/will you make the orb move in the direction you are fancing?
+Explain and provide specific code.
+
+I'd make the orb move by orient it by the movement of the player.
+The player is a sprite sheet that allows you play the game
+ The space key will appear the orb in the game.
+
+
+

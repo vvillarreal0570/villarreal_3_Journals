@@ -1,0 +1,32 @@
+Feb 17
+
+What are arrays for?
+Arrays are for arrangement of objects. 
+
+What is the code for an int array?
+
+
+What is the code of an String array?
+
+
+What is the code for a boolean array?
+
+
+What is the code for a double array?
+
+
+How would you change the first value of the int array to 42?
+
+
+Of the String array to "Bob"?
+ 
+What does this do: private String[] dessert = new String [3];
+
+
+What does this do: private String[] postres = { "rice pudding", "pan dulce
+", "buenuelos"}
+
+How are they different?
+
+
+How would we replace "buenuelos" wit "apple pie"

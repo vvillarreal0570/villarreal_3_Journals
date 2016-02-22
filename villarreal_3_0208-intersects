@@ -1,0 +1,5 @@
+Feb. 8th
+
+How would one check to see whether weapons damage enemies or objects in Slick?
+
+You would know if the "isVisible" product equals false.
