@@ -1,0 +1,13 @@
+Feb 26
+What does the code below do?
+The code below gives the variable map coordinates to follow. It is firs seetting the array and then it states if the piece of code isnt right, then it will follow another command. 
+
+How could you make it print an X? i.e., what array values would you change?
+The array values would change by setting different number to the char.
+
+How could you use this to make a 5 in a row game?
+Set the value of the array and set its size.
+
+
+
+

@@ -1,0 +1,20 @@
+Feb 24
+
+Define a class Rat.
+A subsection of the java class named "Rat"
+
+Provide the code to declare and instatiate Rats.
+public class Rat {
+	int x = 0;
+	}
+
+Explain where the declaration and initialization are placed.
+The declaration initiates when public is typed. The initialization starts
+when a command is given.
+
+Provode a two-dimensional array that specifies coordinates for five rats.
+int rat1 = {0,1};
+int rat2 = {2,3};
+int rat3 = {4,5};
+int rat4 = {6,7};
+int rat5 = {8,9};
