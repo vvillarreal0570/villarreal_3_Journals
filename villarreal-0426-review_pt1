@@ -1,0 +1,29 @@
+April 26
+
+Java:
+public static  {
+    int = n;
+  {
+    return (n*n);
+  }
+}
+
+Aduino:
+public static  {
+    double = x;
+    sq (x*x)
+  {
+    return (sq);
+  }
+}
+
+Class, object, and constructor:
+public Sudent(int age, int grade) {
+    age = n;
+    grade = x;
+    
+    Student person = new Student(n, x);
+}
+
+What to create in Arduino:
+-Arduino is a low level program, so I think it should be appropriate to create more complex commands.
