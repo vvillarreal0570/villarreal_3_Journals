@@ -1,0 +1,16 @@
+April 18th
+
+Why use elf64?
+-It made the code ready to convert to binary
+
+Why use ld?
+-It made the code more successfull by being able to link it to the program
+
+Why did you not have to use chmod to make sample executable?
+-because the code did not wanted access of another directory
+
+Given your actual experience with Assembly now --- Is assembly 'quick and easy'? Why or why not?
+-Assemly is a low level language; it is harder to write and undestrand because its more complex
+
+What does 'low level' actually mean with regards to programming languages?
+-Little instruction, simpler.
