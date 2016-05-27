@@ -1,0 +1,311 @@
+
+package parttwo;
+
+import java.util.Scanner;
+
+
+public class PartTwo {
+    
+    public static boolean isalive = true;
+
+    public static Player player;
+    
+    public static String movement;
+    
+    static boolean isplaying;
+    
+    public static void main(String[] args) {
+       
+        
+        System.out.println(""); 
+        
+        
+        System.out.println("//  //  //////  //      //      //////     //////  //  //  //////  //////    //////");
+        System.out.println("//  //  //      //      //      //  //       //    //  //  //      //   //   //    ");
+        System.out.println("//////  //////  //      //      //  //       //    //////  //////  //////    //////");
+        System.out.println("//  //  //      //      //      //  //       //    //  //  //      //   //   //    ");
+        System.out.println("//  //  //////  //////  //////  //////       //    //  //  //////  //    //  //////");
+        System.out.println(""); 
+        
+        System.out.println("enemy = ~");
+        System.out.println("treasure = $");
+        
+        while(isalive){    
+        
+        map();
+        
+        movement();        
+            }
+    }
+        
+
+    private static void map() {
+                char[][] map = new char[31][31];
+                
+                map[player.playerx][player.playery]='*';
+                map[enemy.enemyx][enemy.enemyy] = '~';
+                map[enemy2.enemy2x][enemy2.enemy2y] = '~';
+                map[treasure.treasurex][treasure.treasurey] = '$';
+
+        for (int i = 0; i <= map[0].length - 1; i++) {
+                        for (int j = 0; j <= map[1].length - 1; j++) {
+                            if (j < map[1].length - 1) {                                
+                                if (map[i][j] != '*' && map[i][j] != '~' && map[i][j] != '$' && map[i][j] != '~') {
+
+                                    System.out.print(".");
+                                } else {
+                                    System.out.print(map[i][j]);
+                                }
+                            } else if (map[i][j] != '.') {
+                                System.out.println(".");
+                            } else {
+                                System.out.println(map[i][j]);
+                            }
+                        }
+                }
+         
+    }
+    
+    static void movement() {
+        System.out.println("Enter 'N' to move up");
+        System.out.println("Enter 'S' to move down");
+        System.out.println("Enter 'E' to move right");
+        System.out.println("Enter 'W' to move left");
+        System.out.println("Enter 'NE' to move diagonally up right");
+        System.out.println("Enter 'NW' to move diagonally up left");
+        System.out.println("Enter 'SE' to move diagonally down right");
+        System.out.println("Enter 'Sw' to move diagonally down left");
+
+            Scanner compass = new Scanner(System.in);
+            movement = compass.nextLine().trim().toLowerCase();
+            if (movement.contains("n")) {
+                player.playerx--;
+            }
+            if (movement.contains("s")) {
+                player.playerx++;
+            }           
+            if (movement.contains("e")) {
+                player.playery++;
+            }           
+            if (movement.contains("w")) {
+                player.playery--;
+            }      
+            if (movement.contains("ne")) {
+                player.playerx--;
+                player.playery++;
+            }
+            if (movement.contains("sw")) {
+                player.playerx++;
+                player.playery--;
+            }           
+            if (movement.contains("se")) {
+                player.playerx++;
+                player.playery++;
+            }           
+            if (movement.contains("nw")) {
+                player.playerx--;
+                player.playery--;
+            }   
+            if(movement.contains("nw")){
+       
+            }
+            
+            
+            if (player.playery == enemy.enemyy && player.playerx == enemy.enemyx) {
+            player.phealth-= 20;
+            System.out.println("health:"+ player.phealth);
+            
+            if (player.playery == enemy2.enemy2y && player.playerx == enemy2.enemy2x) {
+            player.phealth-= 20;
+            System.out.println("health:"+ player.phealth);
+            
+        }
+            
+        
+        
+        if(player.playery == treasure.treasurey && player.playerx == treasure.treasurex)
+        {
+            isplaying = false;
+            
+            System.out.println("//   //  /////  //  //    //       //  //  ////   //");
+            System.out.println(" // //   // //  //  //    //       //  //  // //  //");
+            System.out.println("  //     // //  //  //    //   //  //  //  //  // //");
+            System.out.println("  //     // //  //  //    // // // //  //  //   ////");
+            System.out.println("  //     /////  //////    //       //  //  //     //");
+            System.out.println(""); 
+            
+            
+        }
+        
+        
+        
+        if(player.phealth == 0)
+        {
+            isplaying = false;
+            
+            System.out.println("//   //  /////  //  //    //     /////  /////  ////// ");
+            System.out.println(" // //   // //  //  //    //     // //  //       //   ");
+            System.out.println("  //     // //  //  //    //     // //  /////    //   ");
+            System.out.println("  //     // //  //  //    //     // //     //    //   ");
+            System.out.println("  //     /////  //////    /////  /////  /////    //   ");
+            System.out.println(""); 
+        }
+        
+    
+   
+            
+    }
+}
+}
+
+    
+    
+package parttwo;
+
+
+
+public class enemy {
+    
+    public static int enemyx = 6;
+    public static int enemyy = 5;    
+
+    public static int getEnemyx() {
+        return enemyx;
+    }
+
+    public static void setEnemyx(int enemyx) {
+        enemy.enemyx = enemyx;
+    }
+
+    public static int getEnemyy() {
+        return enemyy;
+    }
+
+    public static void setEnemyy(int enemyy) {
+        enemy.enemyy = enemyy;
+    }
+ 
+}
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package parttwo;
+
+/**
+ *
+ * @author vvillarreal
+ */
+public class enemy2 {
+    
+    public static int enemy2x = 16;
+    public static int enemy2y = 15;
+
+    public static int getEnemy2x() {
+        return enemy2x;
+    }
+
+    public static void setEnemy2x(int enemy2x) {
+        enemy2.enemy2x = enemy2x;
+    }
+
+    public static int getEnemy2y() {
+        return enemy2y;
+    }
+
+    public static void setEnemy2y(int enemy2y) {
+        enemy2.enemy2y = enemy2y;
+    }
+    
+}
+    
+    
+    
+    
+    /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package parttwo;
+
+/**
+ *
+ * @author vvillarreal
+ */
+public class Player {
+    public static int playerx = 13;
+    public static int playery = 13;
+    public static int phealth = 100;
+
+    public static int getPlayerx() {
+        return playerx;
+    }
+
+    public static void setPlayerx(int playerx) {
+        Player.playerx = playerx;
+    }
+
+    public static int getPlayery() {
+        return playery;
+    }
+
+    public static void setPlayery(int playery) {
+        Player.playery = playery;
+    }
+
+    public static int getPhealth() {
+        return phealth;
+    }
+
+    public static void setPhealth(int phealth) {
+        Player.phealth = phealth;
+    }
+    
+}
+
+
+ * and open the template in the editor.
+ */
+package parttwo;
+
+/**
+ *
+ * @author vvillarreal
+ */
+public class treasure {
+    public static int treasurey = 22;
+    public static int treasurex = 22;
+
+    public static int getTreasurey() {
+        return treasurey;
+    }
+
+    public static void setTreasurey(int treasurey) {
+        treasure.treasurey = treasurey;
+    }
+
+    public static int getTreasurex() {
+        return treasurex;
+    }
+
+    public static void setTreasurex(int treasurex) {
+        treasure.treasurex = treasurex;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+             
+
+
+
