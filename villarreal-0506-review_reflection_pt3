@@ -1,0 +1,41 @@
+May 6th
+
+With myMap[67][43] 
+x coordinate?
+-43
+
+y cooardinate?
+-67
+
+What happens in line #a?
+if (i=0){ System.out.print("8888")
+-if the i is 0 it will print 8888, first if statement.
+
+What happens in line #b?
+System.out.print(map[i][j])
+-This will print the array map with the values of i and j.
+
+What happens in line #c?
+System.out.println(".")
+-After each array a period would be typed.
+
+How is it different from line #e?
+-Different if statements.
+
+What happens in line #d?
+System.out.println(map[i][j])
+-This will finish the array at the end of the for loop.
+
+
+While loop with boolean.
+-The while loop will continue running and repeating if the boolean is true.
+
+How to use an object in the game.
+-Rectangle rectangle = new rectangle;
+
+
+
+
+
+
+
