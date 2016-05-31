@@ -1,0 +1,22 @@
+May 20th
+
+Create a class Ogre, Ogre object, provide a setter, move method, and  3 arrays.
+
+public class Ogre{
+
+    private static int x;
+    private static int y;
+    private static int HP;
+    private static String symbol;
+    private static int score;
+    private static int level;
+
+    Player(int a, int b) {
+        this.x = a;
+        this.y = b;
+        this.HP = 100;
+        symbol = "O";
+        score = 0;
+        level = 1;
+    }
+}
