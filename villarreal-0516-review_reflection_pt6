@@ -1,0 +1,23 @@
+May 16th
+
+What is up-casting?
+-casting to a supertype
+Animal animal = new Dog();
+Dog castedDog = (Dog) animal;
+
+What is down-casting?
+-casting to a subtype
+Animal animal = new Animal();
+Dog dog = (Dog) animal;
+
+How to convert a char to a String.
+-Character.toString(char)
+
+Range of a byte, Why?
+-The range for a byte in java is -128 to 127,number of zeros in binary.
+
+
+
+
+
+
