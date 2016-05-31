@@ -1,0 +1,25 @@
+Create a class 'Hero' with health, score, weapon/power, dexterity, perception, level, x, y, z, and a symbol with class constructor.
+
+Public class Hero{
+	int healh;
+	int score;
+	int power;
+	int dexterity;
+	int precption;
+	int level;
+	int x;
+	int y;
+	int z;	
+	String Symbol;
+	public static Hero(int a, int b, String c){
+		int x =a;
+		int y = b;
+		Symbol = c;
+	}
+}
+
+public static Hero superman = new Hero;
+superman.Hero(9,9, player);
+
+Why to not to initialize the hero in class hero?
+-If you wanted level ups. 
