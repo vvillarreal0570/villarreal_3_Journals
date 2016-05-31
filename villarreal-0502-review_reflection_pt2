@@ -1,0 +1,34 @@
+May 2nd
+
+What is an Array?
+-An array is an ordered list of data type.
+
+How does one simple array of Strings?
+-Strings[] school = {books, pencil, backack};
+
+What is a syntax of 2D array?
+-int[][]
+
+What is a syntax of 3D array?
+-int[][][]
+
+How does one change the value for the third value in a one dimesional array?
+-It extends by adding square brackets: int[10][10][10];
+
+What is a while loop?
+-while() {};
+
+What is while loop for?
+-To repeat a command.
+
+How to call the game in main?
+-game(); which is a method.
+
+Why was it recommended to use Scanner with lower case?
+-It is recommended because it is a common practice to do so.
+
+Why and How should you use different methods when moving the protagonist and to check instersections?
+-To check for intersection a while loop will establish a method.
+
+What values to pass accross methods? Why? How?
+-Players input.
